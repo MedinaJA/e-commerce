@@ -1,0 +1,62 @@
+<div class="shop-header">
+    <h1>Bienvenido a MindFest</h1>
+    <div class="shop-filters">
+        <button class="filter-button" (click)="filterProducts('all')">Todos</button>
+        <button class="filter-button" (click)="filterProducts('mouse')">Mouse</button>
+        <button class="filter-button" (click)="filterProducts('keyboard')">Teclados</button>
+        <button class="filter-button" (click)="filterProducts('laptop')">Laptops</button>
+    </div>
+</div>
+
+<div class="shop-products">
+    <div class="product" *ngFor="let product of filteredProducts" [attr.data-category]="product.category">
+        <img [src]="product.image" [alt]="product.name">
+        <div class="product-info">
+            <h3>{{ product.name }}</h3>
+            <p class="price">{{ product.price | currency }}</p>
+            <a href="#" class="add-to-cart">Agregar al carrito</a>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-col">
+            <h4>Sobre MindFest</h4>
+            <ul>
+                <li><a href="#">Nuestra Historia</a></li>
+                <li><a href="#">Misión y Visión</a></li>
+                <li><a href="#">Equipo</a></li>
+                <li><a href="#">Carreras</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Ayuda</h4>
+            <ul>
+                <li><a href="#">Preguntas Frecuentes</a></li>
+                <li><a href="#">Soporte</a></li>
+                <li><a href="#">Términos y Condiciones</a></li>
+                <li><a href="#">Política de Privacidad</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Contacta con Nosotros</h4>
+            <ul>
+                <li><a href="mailto:info@mindfest.com">Email: info.com</a></li>
+                <li><a href="tel:+123456789">Teléfono: +593 990836436</a></li>
+                <li><a href="#">Dirección: 123, Machala, Ecuador</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Síguenos</h4>
+            <div class="social-links-footer">
+                <a routerLink="#"><i class="fa fa-facebook"></i></a>
+                <a routerLink="#"><i class="fa fa-x"></i></a>
+                <a routerLink="#"><i class="fa fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 MindFest. Todos los derechos reservados.</p>
+    </div>
+</footer>

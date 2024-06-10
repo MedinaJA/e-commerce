@@ -1,0 +1,171 @@
+/* CSS para el componente Shop */
+.shop-header {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.shop-filters {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.filter-button {
+    background-color: #4c49e5;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.filter-button:hover {
+    background-color: #3734a3;
+}
+
+.shop-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product {
+    width: 30%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product img {
+    display: block;
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.product-info h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.product-info .price {
+    font-size: 1.5rem;
+    color: #111;
+    margin: 10px 0;
+}
+
+.product-info .add-to-cart {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f0c14b;
+    border: 1px solid #a88734;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.product-info .add-to-cart:hover {
+    background-color: #e2a234;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    .product {
+        width: 100%;
+    }
+
+    .shop-header, .shop-filters {
+        margin: 1rem 0;
+    }
+
+    .filter-button {
+        padding: 8px 16px;
+    }
+}
+
+/* Footer */
+.footer {
+    background-color: #111;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    margin-top: 10rem;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.footer-col {
+    margin: 1rem;
+    min-width: 200px;
+    flex: 1 1 250px; /* Ajusta el tamaño mínimo y máximo */
+}
+
+.footer-col h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-col ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #f0c14b;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+}
+
+.social-links a {
+    margin: 0 0.5rem;
+}
+
+.social-links a img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.social-links a img:hover {
+    transform: scale(1.2);
+}
+
+.footer-bottom {
+    margin-top: 2rem;
+    border-top: 1px solid #444;
+    padding-top: 1rem;
+    font-size: 0.875rem;
+}
+
+.social-links-footer a{
+    color: #ccc;
+    margin-left: 2.5rem;
+}
+
+.social-links-footer a:hover {
+    color: #4c49e5;
+}

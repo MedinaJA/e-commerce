@@ -1,0 +1,283 @@
+
+.hero{
+    background-image: url(../../../assets/img/img-home.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 40rem;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.contenedor {
+    padding-top: 2rem;
+}
+
+/*sobre nosotros*/
+
+.sobre-nosotros {
+    margin-top: 5rem;
+    background-image: linear-gradient(to right, transparent 50%, #f9f9f9 50%, #f9f9f9 100%), url(../../../assets/img/habitacion-gaming.jpg);
+    padding: 3rem 0;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 100%, 110rem;
+    object-fit: cover;
+}
+
+.sobre-nosotros-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 7rem;
+}
+
+.texto-nosotros {
+    grid-column: 2/3;
+    color: #111;
+}
+
+/* Estilos para dispositivos pequeños */
+@media only screen and (max-width: 768px) {
+    .sobre-nosotros {
+        background-image: linear-gradient(to bottom, transparent 50%, #f9f9f9 50%, #f9f9f9 100%), url(../../../assets/img/habitacion-gaming.jpg);
+        background-position: center top; /* Ajusta la posición de la imagen */
+        background-size: 100%, 90rem;
+        padding: 3rem 0;
+    }
+
+    .sobre-nosotros-grid {
+        display: grid;
+        grid-template-columns: 1fr; /* Cambia a una columna en dispositivos pequeños */
+        row-gap: 35rem; /* Añade espacio entre las filas */
+    }
+
+    .texto-nosotros {
+        grid-column: 1/2; /* Ajusta el texto a la primera columna */
+        grid-row: 2/3; /* Ajusta el texto a la segunda fila */
+        color: #111; /* Cambia el color del texto a blanco */
+    }
+}
+
+.texto-nosotros p{
+    margin-top: 2rem;
+}
+
+/* productos */
+
+.mouse {
+    display: inline-block;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #111;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    margin: 20px 0;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.mouse h2 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.mouse-t {
+    display: inline-block;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #4c49e5;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    margin: 20px 0;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.mouse-t h2 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Estilo para el enlace dentro del texto "Mouse" */
+
+
+.contenedor-principal {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.mouse:hover {
+    background-color: #333;
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+}
+
+.mouse-t:hover {
+    background-color: #4c49e5;
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+}
+
+@media only screen and (max-width: 768px) {
+    .productos .producto {
+        width: 100%; /* Ajusta el ancho de los productos al 100% en pantallas pequeñas */
+    }
+}
+
+.productos {
+    display: flex;
+    justify-content: space-around; /* Espacio uniforme entre productos */
+    flex-wrap: wrap; /* Permite que los productos se ajusten en múltiples filas si es necesario */
+    gap: 20px; /* Espacio entre los productos */
+}
+
+.producto {
+    width: 30%; /* Ajusta el ancho del producto según tu diseño */
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centra el contenido textualmente */
+}
+
+@media only screen and (max-width: 768px) {
+
+    .productos .producto {
+
+        width: 100%; /* Ajusta el ancho de los productos al 100% en pantallas pequeñas */
+    }
+}
+
+.producto img {
+    display: block;
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.txt-producto h3 {
+    margin: 1rem 0; 
+    font-weight: normal;
+    font-size: 1.5rem;
+}
+
+.txt-producto .precio {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #111;
+    margin: 10px 0;
+}
+
+.txt-producto a {
+    display: block;
+    padding: 1rem 2rem;
+    background-color: #f0c14b;
+    border: 1px solid #a88734;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.txt-producto a:hover {
+    background-color: #e2a234;
+
+}
+.producto .tempest-doom {
+    margin-bottom: 2.8rem;
+ }
+
+.contenedor-principal-t {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+/* Footer */
+.footer {
+    background-color: #111;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    margin-top: 10rem;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.footer-col {
+    margin: 1rem;
+    min-width: 200px;
+    flex: 1 1 250px; /* Ajusta el tamaño mínimo y máximo */
+}
+
+.footer-col h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-col ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #f0c14b;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+}
+
+.social-links a {
+    margin: 0 0.5rem;
+}
+
+.social-links a img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.social-links a img:hover {
+    transform: scale(1.2);
+}
+
+.footer-bottom {
+    margin-top: 2rem;
+    border-top: 1px solid #444;
+    padding-top: 1rem;
+    font-size: 0.875rem;
+}
+
+.social-links-footer a{
+    color: #ccc;
+    margin-left: 2.5rem;
+}
+
+.social-links-footer a:hover {
+    color: #4c49e5;
+}
+
+
+
+
